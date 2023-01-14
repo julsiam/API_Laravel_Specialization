@@ -34,7 +34,7 @@ Route::apiResource('special', SpecialModelController::class);
 // Route::put('special/{id}', [SpecialModelController::class, 'update']);
 
 
-//For the EmployeeController Methods
+//For the ResidentController Methods
 
 Route::post('add_resident',[ResidentController::class, 'addResident']);
 Route::get('all_resident',[ResidentController::class, 'allResident']);
