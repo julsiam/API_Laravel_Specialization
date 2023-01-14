@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ResidentController;
 use App\Http\Controllers\SpecialModelController;
-use App\Models\Employee;
+use App\Models\Residentr;
 use App\Models\SpecialModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -36,10 +36,10 @@ Route::apiResource('special', SpecialModelController::class);
 
 //For the EmployeeController Methods
 
-Route::post('add_employee',[EmployeeController::class, 'storeEmployee']);
-Route::get('all_employee',[EmployeeController::class, 'allEmployees']);
-Route::get('get_employee/{id}',[EmployeeController::class, 'getEmployee']);
-Route::put('update_employee/{id}', [EmployeeController::class, 'updateEmployee']);
-Route::delete('delete_employee/{id}', [EmployeeController::class, 'deleteEmployee']);
+Route::post('add_resident',[ResidentController::class, 'addResident']);
+Route::get('all_resident',[ResidentController::class, 'allResident']);
+Route::get('get_resident/{id}',[ResidentController::class, 'getResident']);
+Route::put('update_resident/{id}', [ResidentController::class, 'updateResident']);
+Route::delete('delete_resident/{id}', [ResidentController::class, 'deleteResident']);
 
 
